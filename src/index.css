@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body ::-moz-selection {
+  /* For Firefox */
+  color: #ffa402;
+}
+
+body ::selection {
+  color: #ffa402;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffa402;
+  /* border-radius: 15px; */
+}
+
+.scrollToTop {
+  background-color: transparent;
+  background-image: white;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px transparent inset;
+  transition: 0.5s ease-in-out;
+  z-index: 1000;
+}
