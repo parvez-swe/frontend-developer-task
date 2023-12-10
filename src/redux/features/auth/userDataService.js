@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/user/";
+// const API_URL = "http://localhost:4000/api/user/";
+
+const API_URL = "https://frontend-developer-task-server.onrender.com/api/user/";
 
 const addUserData = async (user) => {
   const response = await axios.post(API_URL, user);
