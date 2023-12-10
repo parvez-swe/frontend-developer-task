@@ -110,10 +110,9 @@ const Form = () => {
             <div className=" relative">
               <ul className="absolute  h-[30vh]  overflow-y-auto overflow-hidden  bg-gray-50 border border-gray-300 dark:border-dark  text-dark sm:text-sm rounded  w-full p-2.5 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white ">
                 {isGetting ? (
-                  <>loading</>
+                  <h1 className="text-center">loading...</h1>
                 ) : (
                   <>
-                    {" "}
                     {sectorData[0]?.sectors?.map((data) => (
                       <div>
                         <div className=" hover:dark:bg-dark px-1">
